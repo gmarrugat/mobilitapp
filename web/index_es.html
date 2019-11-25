@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+	<link rel="shortcut icon" href="logoo.ico" type="image/x-icon" />
+
+    <title>MobilitApp</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/landing-page.css" rel="stylesheet">
+	
+	<!-- smoothDivScroll CSS -->
+	<link href="css/smoothDivScroll.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+	
+	<!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+	
+	<!-- Cycle, slideshow -->
+	<script type="text/javascript" src="js/jquery.cycle.all.js"></script>
+	
+	<!-- the CSS for Smooth Div Scroll -->
+	<link rel="Stylesheet" type="text/css" href="css/smoothDivScroll.css" />
+	
+	<!-- jQuery library - Please load it from Google API's -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" type="text/javascript"></script>
+	
+	<!-- jQuery UI (Custom Download containing only Widget and Effects Core)
+	     You can make your own at: http://jqueryui.com/download -->
+	<script src="js/jquery-ui-1.10.3.custom.min.js" type="text/javascript"></script>
+	
+	<!-- Smooth Div Scroll 1.3 minified-->
+	<script src="js/jquery.smoothdivscroll-1.3-min.js" type="text/javascript"></script>
+	
+	<!-- jQuery Kinectic (1.8.2) used for touch scrolling -->
+	<!-- https://github.com/davetayls/jquery.kinetic/ -->
+	<script src="js/jquery.kinetic.min.js" type="text/javascript"></script>
+	
+	<!-- Latest version (3.1.4) of jQuery Mouse Wheel by Brandon Aaron
+	     You will find it here: https://github.com/brandonaaron/jquery-mousewheel -->
+	<script src="js/jquery.mousewheel.min.js" type="text/javascript"></script>
+	
+	<!-- Plugin initialization for the smoothscroll view--> 
+	<script type="text/javascript">
+		// Initialize the plugin with no custom options
+		$(document).ready(function(){
+		
+			// None of the options are set
+			$("div#makeMeScrollable").smoothDivScroll({
+				mousewheelScrolling: "", //images only can be changed by the hotSpots
+				manualContinuousScrolling: true,
+				autoScrollingMode: "onStart",
+				
+				hotSpotScrollingStep: 5,
+				
+				autoScrollingStep: 1,
+				autoScrollingInterval: 30
+				
+			});
+			
+			// Mouse over
+			$("#makeMeScrollable").bind("mouseover", 
+					function(){
+								$(this).smoothDivScroll("stopAutoScrolling");
+							  });
+							  
+			// Mouse out
+			$("#makeMeScrollable").bind("mouseout", 
+					function(){
+								$(this).smoothDivScroll("startAutoScrolling");
+							  });				  
+		
+			
+		});
+		
+	</script>
+	
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top topnav" role="navigation">
+	
+		<!-- Language Selection List -->
+				<ul class="language">
+					<li><a href="index.html">
+						   <img src="images/Flag Icons/flags/24/United Kingdom(Great Britain).png" alt="en" title="English" name="ukflag">
+						   </a>
+					</li>
+					<li><a href="index_es.html">
+						   <img src="images/Flag Icons/flags/24/Spain.png" alt="es" title="Castellano" name="esflag">
+						   </a>
+					</li>
+					<li><a href="index_ca.html">
+						   <img src="images/Flag Icons/flags/24/Catalonia.png" alt="ca" title="Català" name="caflag">
+						   </a>
+					</li>
+				</ul>
+	
+        <div class="container topnav">
+		
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+			
+			<a class="navbar-brand" href="#">
+				<img class="icon" src="images/m_logo.png" alt="logo">  
+				</a>
+				
+				
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>	
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+					    <span class="icon-bar"></span>
+	
+                </button>
+                
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				
+				
+			
+				<!-- Section Selection List -->
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="#who	">Quiénes somos</a>
+                    </li>
+                    <li>	
+                        <a href="#services">Servicios</a>
+                    </li>
+					 <li>
+                        <a href="#help">Ayuda</a>
+                    </li>
+                    <li>
+                        <a href="#download">Descargar</a>
+                    </li>
+                </ul>
+				
+				
+            </div>
+            <!-- /.navbar-collapse -->
+			
+			
+        </div>
+        <!-- /.container -->
+		
+    </nav>
+
+
+    <!-- Header -->
+    <a name="download"></a>
+    <div class="intro-header">
+        <div class="container">
+	
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="intro-message">
+                        <h1>MobilitApp</h1>
+                        <h3>Análisis de los datos de movilidad de los ciudadanos en el área metropolitana de Barcelona</h3>
+                        <hr class="intro-divider">	
+                        <ul class="list-inline intro-social-buttons">
+                            <li>
+                                <!--<a href="https://drive.google.com/uc?export=download&id=0B5KkgwFG8j8DdVUtbmFTYURpQ2c" class="btn btn-default btn-lg"><i class="fa fa-download fa-fw"></i> <span class="network-name">Download APK</span></a>-->
+                           							
+							<a href="https://play.google.com/store/apps/details?id=com.mobi.mobilitapp">
+							<img alt="Android app on Google Play" class= "playstore"src="images/google-play-badge.png" />
+							</a>
+
+							
+							</li>
+
+                        </ul>
+                    </div>
+                </div>
+				
+            </div>
+        </div>
+        <!-- /.container -->
+<p class="text-muted">Fotografía de Barcelona hecha por : <a href="https://www.flickr.com/photos/lulek/"> Maciek Lulko</a>/<a href="https://creativecommons.org/licenses/by-nc-sa/2.0/"> CC BY-NC-SA 2.0</a></p>
+
+    </div>
+    <!-- /.intro-header -->
+
+    <!-- Page Content -->
+	<a  name="services"></a>
+    <div class="content-section-b">
+
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-10 col-lg-offset-1 text-center">
+                    <hr class="section-heading-spacer-center">
+                    <div class="clearfix"></div>
+                    <h2 class="section-heading"> Información sobre Movilidad </h2>
+                    <p class="lead"> MobilitApp recoge periódicamente las localizaciones de los usuarios. La información obtenida es procesada para analizar el medio de transporte utilizado por el usuario. Por el momento la aplicación es capaz de reconocer: autobús, metro, tren, coche, bicicleta e ir a pie. <br> <br> Los usuarios pueden visualizar sobre un mapa el historial de sus localizaciones a lo largo del día. La información recogida es tratada de forma anónima.</p>
+                </div>
+				
+				<div class="col-lg-13">
+				
+				<div id="makeMeScrollable" >
+				
+				<div class="scrollingHotSpotRight" ></div> <!--End Next-->
+
+				<div class="scrollingHotSpotLeft" ></div> <!--End Prev-->
+				
+				<div class="scrollWrapper"> 
+				
+				<div class="scrollableArea" > 
+				
+                    <img src="img/phones.png" alt="" title="">
+					<img src="img/bicycle1.jpg" alt="" title="">
+                    <img src="img/route_bicycle.png" alt="" title="">
+					<img src="img/pedestrians.jpg" alt="" title="" height="100%">
+					<img src="img/pedestrians2.jpg" alt="" title="">					
+					<img src="img/route_onfoot.png" alt="" title="">
+					<img src="img/intro-bg2.jpg" alt="" title="">
+					<img src="img/route_car.jpg" alt="" title="">
+				
+			</div><!-- End scrollableArea -->
+				
+			</div><!-- End scrollWrapper -->	
+			
+			</div><!-- End makeMeScrollable -->
+			
+				
+            </div>
+
+			
+			
+		</div>	
+
+        </div>
+        <!-- /.container -->
+		
+    </div>
+	
+	<div id="background-image"> 
+		<img src="img/bcn-nord.png"/> 
+	</div>
+		
+    <div class="content-section-a">
+	
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5 col-sm-6">
+                    <hr class="section-heading-spacer">
+                    <div class="clearfix"></div>
+                    <h2 class="section-heading"> Estado del Tráfico e Incidencias a Tiempo Real</h2>
+                    <p class="lead">MobilitApp integra el estado del tráfico a tiempo real proporcionado por el <a target="_blank" href="http://opendata.bcn.cat/">Ayuntamiento de Barcelona</a> y las incidencias por parte de la <a target="_blank" href="http://infocar.dgt.es/etraffic/">Dirección General de Tráfico</a>.</p>
+                </div>
+                <div class="col-lg-5 col-lg-offset-2 col-sm-6">
+                    <img class="img-responsive" src="img/ipad.png" alt="">
+                </div>
+            </div>
+        </div>
+        <!-- /.container -->
+		
+
+    </div>
+    <!-- /.content-section-a -->
+
+    <div class="content-section-b">
+
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6">
+                    <hr class="section-heading-spacer">
+                    <div class="clearfix"></div>
+                    <h2 class="section-heading"> Análisis del Transporte por parte de ATM, la autoridad encargada del transporte en el área metropolitana de Barcelona</h2>
+                    <p class="lead"> Nosotros proporcionamos herramientas para filtrar y analizar los patrones de movilidad de los ciudadanos.<br> En colaboración con la Autoridad del Transporte en el Área Metropolitana de Barcelona. <br><br>
+	    <a href="http://www.atm.cat" >
+			<img class="img-responsive" src="images/Organization Icons/logoATM.gif"  alt="">
+		    
+</a>
+</p>
+                </div>
+		<div class="col-lg-5 col-sm-pull-6  col-sm-6">
+                    <img class="img-responsive" src="img/dog.png" alt="">
+                </div>
+            </div>
+
+        </div>
+        <!-- /.container -->
+
+    </div>
+    <!-- /.content-section-b -->
+
+	<div id="background-image"> 
+		<img src="img/bcnmapa.png"/> 
+	</div>
+	<a name="help"></a>
+   <div class="content-section-a">
+	
+	<div class="container">
+            <div class="row">	
+<div class="col-md-3 col-sm-3">
+</div>
+                <div class="col-md-6 col-sm-6">
+                    <hr class="section-heading-spacer">
+                    <div class="clearfix"></div>
+                    <h2 class="section-heading"> Ayuda</h2>
+                    <p class="lead"> Algunas pistas sobre MobilitApp.</p>
+           
+			</div>
+			</div>
+			<div class="row">	
+			
+			<div class="col-lg-4 col-sm-4 ">
+                    <img class="img-responsive" src="img/main.jpg" alt=""> <br>
+                </div>
+				<div class="col-lg-4 col-sm-4">
+                    <img class="img-responsive" src="img/prefs.jpg" alt=""><br>
+                </div>
+				<div class="col-lg-4 col-sm-4">	
+                    <img class="img-responsive" src="img/off.jpg" alt="">
+                </div>
+            </div>
+	 </div>
+        <!-- /.container -->
+	
+	</div>
+	
+
+<!-- Footer -->
+<a  name="who"></a>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 col-lg-offset-1 text-center">
+				<h3><a href="https://www.youtube.com/watch?v=asVWO0HnvOM">Video Promocional de MobilitApp</a></h3>
+                <h5>Haz click para verlo!</h5>    
+					<br>
+                    <h4><strong>¿Quiénes somos?</strong>
+                    </h4>
+                    <p>MobilitApp está siendo desarrollada por investigadores y <a href="http://www-entel.upc.edu/monica.aguilar/simulators.html">estudiantes</a> del proyecto español <a href="http://inrisco.org/">INRISCO</a> del <a href="http://www.entel.upc.edu"> Departamento de Ingeniería Telemática</a> de la <a href="http://www.upc.edu"> Universidad Politécnica de Cataluña</a> bajo la supervisión de la profesora <a href="http://www-entel.upc.edu/monica.aguilar/"> Mónica Aguilar</a> y la estudiante de doctorado<a href="http://hiromipaw.github.io/"> Silvia Puglisi</a>.  <br> </p>
+					<br>
+					<br>
+					<a href="https://play.google.com/store/apps/details?id=com.mobi.mobilitapp">
+							<img alt="Android app on Google Play" class= "playstore"src="images/google-play-badge.png" />
+							</a>
+					<br>
+					<br>
+					<br>
+          
+			<h4><strong>Desarrolladores</strong></h4>
+			
+			<span>		
+					<a id="developer" href="https://www.linkedin.com/in/marcllahona" target="_blank">Marc Llahona</a>
+					
+					<a id="developer" href="https://es.linkedin.com/pub/sergi-casanova-fouce/100/8b6/54"target="_blank">Sergi Casanova</a>
+					
+					<a id="developer" href="https://es.linkedin.com/in/angeeelll" target="_blank">Ángel Torres</a>
+				
+					<br>
+				
+					<a id="developer" href="https://www.linkedin.com/pub/gerard-marrugat/97/952/34" target="_blank">Gerard Marrugat</a>
+					
+					<a id="developer" href="https://es.linkedin.com/in/antonio-c%C3%A1rdenas-garc%C3%ADa-976717100" target="_blank">Antonio Cárdenas</a>
+			</span>	
+			
+		<br>
+		<br>
+					
+                    <ul class="list-inline">
+                        <li>	
+
+						<div class="col-md-6 col-sm-6 col-xs-6">
+                            <a href="http://www.upc.edu"><img src="images/Organization Icons/logoUPC.gif" class="img-responsive img-centered" alt=""></a>
+							</div>
+							<div class="col-md-6 col-sm-6 col-xs-6">
+                         <a href="http://www-entel.upc.edu/"><img src="images/Organization Icons/logo_entel.jpg" class="img-responsive img-centered" alt=""></a>
+							</div>
+					
+                  
+						
+						</li>
+
+                    </ul>
+                    <hr class="small">
+                    <p class="text-muted">Barcelona 2016</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+    
+
+</body>
+
+</html>

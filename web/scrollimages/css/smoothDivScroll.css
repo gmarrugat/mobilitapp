@@ -1,0 +1,114 @@
+﻿/* You can alter this CSS in order to give Smooth Div Scroll your own look'n'feel */
+
+
+
+
+#makeMeScrollable
+		{
+			width:100%;
+			height: 330px;
+			position: absolute;
+	
+		}
+		
+		/* Replace the last selector for the type of element you have in
+		   your scroller. If you have div's use #makeMeScrollable div.scrollableArea div,
+		   if you have links use #makeMeScrollable div.scrollableArea a and so on. */
+		   
+#makeMeScrollable div.scrollableArea img
+		{
+			display:block;
+			margin-left: auto;
+			margin-right: auto;
+			margin-top: auto;
+			margin-bottom:auto;
+			right: 0;
+			max-width:100%;
+			max-height:100%;
+			position: relative;
+			float: left;
+			margin: 0;
+			padding: 20px;
+			vertical-align:middle;
+			/* If you don't want the images in the scroller to be selectable, try the following
+			   block of code. It's just a nice feature that prevent the images from
+			   accidentally becoming selected/inverted when the user interacts with the scroller. */
+			-webkit-user-select: none;
+			-khtml-user-select: none;
+			-moz-user-select: none;
+			-o-user-select: none;
+			user-select: none;
+		}		
+		
+		/* The scroll wrapper is always the same width and height as the containing element (div).
+   Overflow is hidden because you don't want to show all of the scrollable area.
+*/
+
+div.scrollWrapper
+{
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+	height: 100%;
+}
+
+div.scrollableArea
+{
+	position: relative;
+	width: auto;
+	height: 100%;
+	
+}
+
+/*
+div.scrollingHotSpotRight {
+	background-image:url(../img/arrow_right.png);
+	min-width: 75px;
+	width: 10%;
+	height: 100%;
+	background-position: center center;
+	text-align: center;
+	line-height: 50px;
+	color: #FFF;
+	background-color:#FAAC58;
+	position: absolute;
+	right: 0;
+	z-index: 99; 
+	opacity: 0;
+}
+
+div.scrollingHotSpotLeft{
+	background-image:url(../img/arrow_left.png);
+	min-width: 75px;
+	width: 10%;
+	height: 100%;
+	background-position: center center;
+	text-align: center;
+	line-height: 50px;
+	color: #FFF;
+	background-color:#FAAC58;
+	position: absolute;
+	left: 0;
+	z-index: 99; 
+	opacity: 0;
+}
+
+div.scrollingHotSpotLeft:hover{cursor:url(../img/cursors/cursor_arrow_left.png),url(../img/cursors/cursor_arrow_left.cur),w-resize;}
+
+div.scrollingHotSpotRight:hover{cursor:url(../img/cursors/cursor_arrow_right.png),url(../img/cursors/cursor_arrow_right.cur),e-resize;}
+
+
+#makeMeScrollable:hover div.scrollingHotSpotRight {
+	opacity: 0.50;
+	transition: all .5s ease-out; <!-- Dissapears -->
+	-webkit-transition: all .5s ease-out;
+	background-repeat: no-repeat;
+}
+
+#makeMeScrollable:hover div.scrollingHotSpotLeft{
+	opacity: 0.50;
+	transition: all .5s ease-out; <!-- Dissapears -->
+	-webkit-transition: all .5s ease-out;
+	background-repeat: no-repeat;
+}
+*/
