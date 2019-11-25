@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content" android:layout_height="wrap_content">
+
+    <Button
+    android:id="@+id/start_button"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/start_button"
+        android:layout_marginStart="47dp"
+        android:layout_alignTop="@+id/stop_button"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:width="120dp"
+        android:height="60dp" />
+
+    <Button
+        android:id="@+id/stop_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/stop_button"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="47dp"
+        android:width="120dp"
+        android:height="60dp" />
+
+</RelativeLayout>
